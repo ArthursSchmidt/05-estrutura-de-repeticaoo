@@ -6,11 +6,23 @@
     //Para cada nome que for lido na estrutura de repetição, pergunte ao usuário se é Masculino (M) ou Feminino (F). De acordo com a resposta do usuário, adicione na lista correspondente. Apresente as duas listas de nomes ao final do programa.
 
     //ENTRADA
-
+    let listaDeNomes = ["João", "Maria", "José", "Amanda", "Beatriz", "Júlio", "Olívia"];
 
     //PROCESSAMENTO
-
+    let generos = [];
+        for (nome of listaDeNomes){
+            const generos = prompt(`O nome é FEMININO - (F) ou MASCULINO - (F)?`).toUpperCase().trim().charAt(0);
+            if (generos == "M"){
+                generos.push("M")
+            }
+            else if(generos == "F"){
+                generos.push("F")
+            }
+            else {
+                generos.push("indefinido")
+            }
+        }
     
-    //SAÍDA
+    //SAÍDA  tem que colocar alert
 
 </script>
