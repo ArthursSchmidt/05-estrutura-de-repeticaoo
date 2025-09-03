@@ -9,17 +9,18 @@
     let listaDeNomes = ["João", "Maria", "José", "Amanda", "Beatriz", "Júlio", "Olívia"];
 
     //PROCESSAMENTO
-    let ListaGeneros = [];
+    let Masculino = []
+    let Feminino = []
         for (nome of listaDeNomes){
             const generos = prompt(`O nome ${nome} é FEMININO - (F) ou MASCULINO - (M)?`).toUpperCase().trim().charAt(0);
             if (generos == "M"){
-                ListaGeneros.push("M")
+                Masculino.push(nome)
             }
             else if(generos == "F"){
-                ListaGeneros.push("F")
+                Feminino.push(nome)
             }
             else {
-                ListaGeneros.push("indefinido")
+                .push()
             }
         }
     
