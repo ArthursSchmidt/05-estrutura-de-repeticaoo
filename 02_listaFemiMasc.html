@@ -9,20 +9,20 @@
     let listaDeNomes = ["João", "Maria", "José", "Amanda", "Beatriz", "Júlio", "Olívia"];
 
     //PROCESSAMENTO
-    let generos = [];
+    let ListaGeneros = [];
         for (nome of listaDeNomes){
-            const generos = prompt(`O nome é FEMININO - (F) ou MASCULINO - (F)?`).toUpperCase().trim().charAt(0);
+            const generos = prompt(`O nome ${nome} é FEMININO - (F) ou MASCULINO - (M)?`).toUpperCase().trim().charAt(0);
             if (generos == "M"){
-                generos.push("M")
+                ListaGeneros.push("M")
             }
             else if(generos == "F"){
-                generos.push("F")
+                ListaGeneros.push("F")
             }
             else {
-                generos.push("indefinido")
+                ListaGeneros.push("indefinido")
             }
         }
     
-    //SAÍDA  tem que colocar alert
-
+    //SAÍDA 
+        alert(listaDeNomes.join(" - ") + `\n` + ListaGeneros.join(" - ") )
 </script>
