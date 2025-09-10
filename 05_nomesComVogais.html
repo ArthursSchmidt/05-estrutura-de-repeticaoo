@@ -10,11 +10,15 @@
 
     //PROCESSAMENTO
     let nomesVogal = [];
-    let vogais = ["A" , "E" , "I" , "O" , "U"];
-    for(let nomes = listaDeNomes){
-        for(let vogal of vogais)
+    let vogais = ["A", "E", "I", "O", "U"];
+    for (let nome of listaDeNomes) {
+        for (let vogal of vogais) {
+        if (nome.indexOf(vogal) == 0) {
+            nomesVogal.push(nome);
+            }
+        }
     }
 
     //SAÍDA
-
+    alert(nomesVogal.sort().join(" - "));
 </script>
